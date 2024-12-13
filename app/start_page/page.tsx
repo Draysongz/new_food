@@ -1,6 +1,6 @@
 "use client"
 
-import { PermissionModal, Loading } from "@/components";
+import { PermissionModal } from "@/components";
 import { pageData } from "@/lib/startPageData"
 import Image from "next/image"
 import { useState } from "react";
@@ -34,8 +34,6 @@ const StartPage = () => {
         </main>
 
         { openModal && <PermissionModal onClose={() => {setOpenModal(!openModal)}} link="/home" /> }
-
-        {/* <Loading /> */}
     </div>
   )
 }
