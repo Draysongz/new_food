@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-full h-full min-h-screen flex justify-center pt-12 bg-[#F8F0FB1A]">
+    <div className="w-full h-full min-h-screen flex justify-center bg-[#F8F0FB1A]">
         <main className="flex flex-col w-full gap-y-20">
           {loading ? <Loading /> 
           :

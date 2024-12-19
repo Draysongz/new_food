@@ -17,7 +17,7 @@ const Loading = () => {
     ];
 
   return (
-    <div className="w-full h-full flex justify-center pt-5 bg-[#F8F0FB1A]">
+    <div className="w-full h-full flex justify-center pt-20 bg-[#F8F0FB1A]">
         <main className="flex flex-col w-full px-5 gap-y-20 pt-10">
             <section className='flex flex-col gap-y-3'>
                 {pageList.map((list, index) => (
