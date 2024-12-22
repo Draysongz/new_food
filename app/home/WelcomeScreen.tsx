@@ -16,7 +16,32 @@ const WelcomeScreen = () => {
       return () => clearTimeout(timer);
     }, []);
 
-  const homeNav = ["restaurant", "sell goods", "my orders", "my payments", "my profile", "bot"]
+  const homeNav = [
+    {
+      name: "restaurant",
+      url: "/restaurant"
+    },
+    {
+      name: "sell goods",
+      url: "/sell_goods"
+    },
+    {
+      name: "my orders",
+      url: "/my_orders"
+    },
+    {
+      name: "my payments",
+      url: "/my_payments"
+    },
+    {
+      name: "my profile",
+      url: "/my_profile"
+    },
+    {
+      name: "bot",
+      url: "/bot"
+    }
+  ]
 
   return (
     <div>
@@ -50,7 +75,7 @@ const WelcomeScreen = () => {
                 {homeNav.map((nav, index) => (
                   <span key={index} className='px-4 py-3 border border-[#FDD902] flex flex-col justify-between gap-y-4 items-center bg-[#FDD90240] w-[46%] h-full rounded-xl'>
                     <span className='h-[130px] w-full bg-[#D9D9D9]'></span>
-                    <a href={`/${nav}`}><h3 className='text-[#FDD902] text-md font-semibold text-center uppercase'>{nav}</h3></a>
+                    <a href={nav.url}><h3 className='text-[#FDD902] text-md font-semibold text-center uppercase'>{nav.name}</h3></a>
                   </span>
                 ))}
               </section>
