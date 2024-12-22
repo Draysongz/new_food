@@ -24,7 +24,7 @@ const Search = () => {
           <section className="flex w-full flex-wrap">
             <div className="flex gap-x-5 justify-center w-full">
               {Buttons.map((tab, index) => (
-                <span key={index} onClick={() => {setActive(tab)}} className={`w-1/2 text-center rounded-xl py-4 text-lg ${active == tab ? "bg-[#FDD902] text-black" : "text-[#FFFFFF33] bg-[#FDD9021A]"}`}>{tab}</span>
+                <span key={index} onClick={() => {setActive(tab)}} className={`w-1/2 text-center rounded-xl py-4 text-lg ${active == tab ? "bg-[#FDD902] text-black" : "text-[#FFFFFF33] bg-[#FDD9021A] hover:bg-[#FDD902] hover:text-black"}`}>{tab}</span>
               ))}
             </div>
           </section>
